@@ -1,4 +1,4 @@
-export class Education{
+export class School{
     name: string;
     link: string;
     startYear: string;

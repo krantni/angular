@@ -1,3 +1,7 @@
-<p>
-  education works!
-</p>
+<div class="containter">
+  <div *ngFor="let school of schools">
+    <img src={{school.imagePath}} class="schoolImage">
+    <h4>{{school.name}}</h4>
+    <h5>{{school.startYear}} - {{school.endYear}}</h5>
+  </div>
+</div>

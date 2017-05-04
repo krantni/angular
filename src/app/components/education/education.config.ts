@@ -1,21 +1,21 @@
-import { Education } from './education.metadata';
+import { School } from './education.metadata';
 
-export const SCHOOLS: Education[] = [
+export const SCHOOLS: School[] = [
     {
         name: "University of Minnesota - Twin Cities",
         link: "https://twin-cities.umn.edu",
         startYear: "2013",
         endYear: "2017",
-        imagePath: "string",
+        imagePath: "/assets/images/UMN.png",
         major: "Computer Science",
         description: "TODO"
     },
     {
         name: "Stoughton Area High School",
         link: "http://www.stoughton.k12.wi.us/page.cfm?p=508",
-        startYear: "2013",
-        endYear: "2017",
-        imagePath: "string",
+        startYear: "2009",
+        endYear: "2013",
+        imagePath: "/assets/images/SHS.png",
         major: "Computer Science",
         description: "TODO"
     }

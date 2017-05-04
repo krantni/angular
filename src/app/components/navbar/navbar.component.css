@@ -1,6 +1,11 @@
 .active {
   color: #fff;
 }
+
+.navbar{
+  font-variant: small-caps;
+}
+
 .navbar-toggler {
   border: solid 1px silver;
   border-radius: 2px;

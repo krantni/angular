@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { School } from './education.metadata';
+import { SCHOOLS } from './education.config';
 
 @Component({
   selector: 'app-education',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./education.component.css']
 })
 export class EducationComponent implements OnInit {
+  public schools: School[];
 
   constructor() { }
 
   ngOnInit() {
+    this.schools = SCHOOLS;
   }
 
 }
