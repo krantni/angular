@@ -1,7 +1,12 @@
 <div class="containter">
-  <div *ngFor="let school of schools">
-    <img src={{school.imagePath}} class="schoolImage">
-    <h4>{{school.name}}</h4>
-    <h5>{{school.startYear}} - {{school.endYear}}</h5>
+  <div *ngFor="let school of schools" class="schoolCard">
+    <div class="schoolInfo">
+      <img src={{school.imagePath}} class="schoolImage">
+      <h4>{{school.name}}</h4>
+      <h6>{{school.startYear}} - {{school.endYear}}</h6>
+      <div *ngIf="!hasMajor(school.major)">
+          <h6>{{school.major}}</h6>
+      </div>
+    </div>
   </div>
 </div>

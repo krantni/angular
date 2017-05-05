@@ -16,4 +16,8 @@ export class EducationComponent implements OnInit {
     this.schools = SCHOOLS;
   }
 
+  hasMajor(major){
+    return major === "";
+  }
+
 }

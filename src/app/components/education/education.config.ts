@@ -16,7 +16,7 @@ export const SCHOOLS: School[] = [
         startYear: "2009",
         endYear: "2013",
         imagePath: "/assets/images/SHS.png",
-        major: "Computer Science",
+        major: "",
         description: "TODO"
     }
 
