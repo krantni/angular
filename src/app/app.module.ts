@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { EducationComponent } from './components/education/education.component';
 import { SocialmediaComponent } from './components/socialmedia/socialmedia.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
     HomeComponent,
     ExperienceComponent,
     EducationComponent,
-    SocialmediaComponent
+    SocialmediaComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
