@@ -1,3 +1,5 @@
-<p>
-  socialmedia works!
-</p>
+<div class="containter-fluid">
+  <a *ngFor="let site of sites" target = "blank" href={{site.link}}>
+       <img class="img-responsive siteImage" src={{site.imagePath}} alt={{site.Name}}>
+  </a>
+</div>

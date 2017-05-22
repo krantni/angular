@@ -9,13 +9,13 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
-  isCollapsed = true;
+  isExpanded = true;
 
   ngOnInit() {
   }
 
   public get menuIcon(): string {
-    return this.isCollapsed ? '☰' : '✖';
+    return this.isExpanded ? '☰' : '✖';
   }
   
 }

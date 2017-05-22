@@ -1,0 +1,6 @@
+.siteImage{
+    display: inline-block;
+    max-height: 50px;
+    max-width: 50px;
+    padding: 5px;
+}

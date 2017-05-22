@@ -1,5 +1,5 @@
 .navbar-inverse .navbar-nav>li>a{
-  color: #000000;
+  color: #FFFFFF;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover
@@ -12,6 +12,10 @@ button.navbar-toggle.collapsed{
   margin: auto;
   float: none; 
   border: none;
+}
+
+h4{
+    font-family: 'Open Sans', 'Lato',sans-serif;
 }
 
 .header{
@@ -36,6 +40,8 @@ li:hover a{
 nav {
   background-color: #549de5;
   border: none;
+  font-family: 'Open Sans', 'Lato',sans-serif;
+
 }
 
 .navbar-header {
@@ -51,6 +57,33 @@ nav {
 .navbar .navbar-collapse {
     text-align: center;
     border-top: 0px;
-    -webkit-transition: height 2s;
-    transition: height 2s;
+    background-color: #549de5;
 }
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-10%);
+	}
+	50%{
+		transform: translateY(-5%);
+  }			
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+@-webkit-keyframes slideDown {
+	0% {
+		-webkit-transform: translateY(-10%);
+	}
+	50%{
+		-webkit-transform: translateY(-5%);
+	}		
+	100% {
+		-webkit-transform: translateY(0%);
+	}	
+}
+
+.navbar-collapse{
+  animation: slideDown 50ms;
+} 
