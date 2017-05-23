@@ -1,0 +1,45 @@
+h3, h4, h5{
+    margin: 2px;
+}
+
+.jobCard {
+    width: 60%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(192,192,192,0.2);
+    transition: 0.3s;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px auto;
+}
+
+.jobImage{
+    float:right;
+    max-height: 75px;
+}
+
+
+@media only screen and (max-width: 720px) {
+    .jobCard {
+        width: 100%;
+    }
+    h3{
+        font-size: .8em;
+    }
+    h4{
+        font-size: .7em;
+    }
+    h5{
+        font-size: .6em;
+    }
+    .jobImage{
+        float:right;
+        max-height: 50px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .jobCard {
+        width: 80%;
+    }
+}

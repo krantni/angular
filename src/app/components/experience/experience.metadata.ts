@@ -1,7 +1,7 @@
 export class Job{
     name: string;
     startDate: string;
-    endData: string;
+    endDate: string;
     imagePath: string;
     jobTitle: string;
     intro: string;

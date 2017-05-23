@@ -6,7 +6,7 @@ export const SCHOOLS: School[] = [
         link: "https://twin-cities.umn.edu",
         startYear: "2013",
         endYear: "2017",
-        imagePath: "/assets/images/UMN.png",
+        imagePath: "/assets/images/schools/UMN.png",
         major: "Computer Science",
         description: "TODO"
     },
@@ -15,7 +15,7 @@ export const SCHOOLS: School[] = [
         link: "http://www.stoughton.k12.wi.us/page.cfm?p=508",
         startYear: "2009",
         endYear: "2013",
-        imagePath: "/assets/images/SHS.png",
+        imagePath: "/assets/images/schools/SHS.png",
         major: "",
         description: "TODO"
     }

@@ -1,3 +1,10 @@
-<p>
-  experience works!
-</p>
+<div class="containter-fluid">
+  <div *ngFor="let job of jobs" class="jobCard">
+    <div class="jobInfo">
+      <img *ngIf="!hasImage(job.imagePath)" src={{job.imagePath}} class="img-responsive jobImage"> 
+      <h3>{{job.name}}</h3>
+      <h4>{{job.jobTitle}}</h4>
+      <h5>{{job.startDate}} - {{job.endDate}}</h5>
+    </div>
+  </div>
+</div>

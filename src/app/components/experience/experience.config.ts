@@ -1,11 +1,11 @@
 import { Job } from './experience.metadata';
 
-export const Jobs: Job[] = [
+export const JOBS: Job[] = [
     {
         name: "University of Minnesota",
-        startDate: "January 2016",
-        endData: "May 2017",
-        imagePath: "",
+        startDate: "January 2016", 
+        endDate: "May 2017",
+        imagePath: "/assets/images/jobs/UMN.png",
         jobTitle: "Undergraduate Teaching Assistant",
         intro: "Undergraduate Teaching Assistant for CSCI 2041 - Advanced Programming Principles",
         descriptions: [
@@ -18,8 +18,8 @@ export const Jobs: Job[] = [
     {
         name: "Honeywell - Aerospace",
         startDate: "May 2016",
-        endData: "August 2016",
-        imagePath: "",
+        endDate: "August 2016",
+        imagePath: "/assets/images/jobs/Honeywell.png",
         jobTitle: "Engineering Tools Intern",
         intro: "",
         descriptions: [
@@ -32,8 +32,8 @@ export const Jobs: Job[] = [
     {
         name: "Graco Inc.",
         startDate: "February 2015",
-        endData: "August 2015",
-        imagePath: "",
+        endDate: "August 2015",
+        imagePath: "/assets/images/jobs/Graco.png",
         jobTitle: "Information Systems Intern",
         intro: "",
         descriptions: [
@@ -46,8 +46,8 @@ export const Jobs: Job[] = [
     {
         name: "University of Minnesota",
         startDate: "September 2014",
-        endData: "December 2014",
-        imagePath: "",
+        endDate: "December 2014",
+        imagePath: "/assets/images/jobs/UMN.png",
         jobTitle: "Undergraduate Teaching Assistant",
         intro: "Undergraduate Teaching Assistant for CSCI 1913 - Introduction to Algorithms, Data Structures, and Program Development",
         descriptions: [
@@ -60,8 +60,8 @@ export const Jobs: Job[] = [
     {
         name: "Stoughton Country Club",
         startDate: "May 2010",
-        endData: "August 2014",
-        imagePath: "",
+        endDate: "August 2014",
+        imagePath: "/assets/images/jobs/SCC.png",
         jobTitle: "Greenskeeper",
         intro: "General golf course maintenance including:",
         descriptions: [
@@ -73,10 +73,10 @@ export const Jobs: Job[] = [
     {
         name: "Stoughton Cinema Cafe",
         startDate: "Jun 2009",
-        endData: "April 2010",
+        endDate: "April 2010",
         imagePath: "",
         jobTitle: "Cook",
-        intro: "",
+        intro: "/assets/images/jobs/Cinema.png",
         descriptions: [
             "Prepare and cook menu items",
             "Prep and clean kitchen and work areas",
