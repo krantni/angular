@@ -76,7 +76,7 @@ export const JOBS: Job[] = [
         endDate: "April 2010",
         imagePath: "",
         jobTitle: "Cook",
-        intro: "/assets/images/jobs/Cinema.png",
+        intro: "",
         descriptions: [
             "Prepare and cook menu items",
             "Prep and clean kitchen and work areas",

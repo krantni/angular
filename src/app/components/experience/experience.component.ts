@@ -17,8 +17,8 @@ export class ExperienceComponent implements OnInit {
     this.jobs = JOBS;
   }
 
-  hasImage(imagePath){
-    return imagePath === "";
+  public hasDetail(detail){
+    return detail === "";
   }
 
 }

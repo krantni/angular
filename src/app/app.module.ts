@@ -14,7 +14,8 @@ import { SocialmediaComponent } from './components/socialmedia/socialmedia.compo
 import { FooterComponent } from './components/footer/footer.component';
 
 const appRoutes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: '', redirectTo: '/about', pathMatch: 'full' },
+  {path: 'about', component: HomeComponent},
   {path: 'education', component: EducationComponent},
   {path: 'experience', component: ExperienceComponent}
 ]
