@@ -1,12 +1,10 @@
 <div class="containter-fluid">
   <div *ngFor="let school of schools" class="schoolCard">
     <div class="schoolInfo">
-      <img src={{school.imagePath}} class="schoolImage">
-      <h4>{{school.name}}</h4>
-      <h6>{{school.startYear}} - {{school.endYear}}</h6>
-      <div *ngIf="!hasMajor(school.major)">
-          <h6>{{school.major}}</h6>
-      </div>
+      <img src={{school.imagePath}} class="img-responsive schoolImage">
+      <h3>{{school.name}}</h3>
+      <h5>{{school.startYear}} - {{school.endYear}}</h5>
+      <h5 *ngIf="!hasMajor(school.major)">{{school.major}}</h5>
     </div>
   </div>
 </div>

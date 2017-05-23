@@ -1,6 +1,11 @@
 .siteImage{
     display: inline-block;
-    max-height: 50px;
-    max-width: 50px;
+    max-height: 35px;
+    max-width: 35px;
     padding: 5px;
+}
+
+/* overwrite bootstrap */
+a:hover, a:focus {
+    text-decoration: none;
 }
