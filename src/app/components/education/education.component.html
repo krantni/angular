@@ -1,5 +1,5 @@
 <div class="containter-fluid">
-  <div *ngFor="let school of schools" class="schoolCard">
+  <div *ngFor="let school of schools" class="schoolCard" [@initState]="schoolState">
     <div class="schoolInfo">
       <img src={{school.imagePath}} class="img-responsive schoolImage">
       <h3>{{school.name}}</h3>

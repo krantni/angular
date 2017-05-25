@@ -1,6 +1,6 @@
-<div class="containter-fluid">
-  <div *ngFor="let job of jobs" class="jobCard">
-    <div class="jobInfo">
+<div class="containter-fluid" >
+  <div *ngFor="let job of jobs" class="jobCard" [@initState]="jobState">
+    <div class="jobInfo" >
       <img *ngIf="!hasDetail(job.imagePath)" src={{job.imagePath}} class="img-responsive jobImage"> 
       <h3>{{job.name}}</h3>
       <h4>{{job.jobTitle}}</h4>

@@ -52,10 +52,6 @@ h4{
   height: 4px;
 }
 
-li:hover {
-  
-}
-
 li:hover a{
   border-bottom: 2px solid #000 !important;
   padding-bottom: 0px !important;
