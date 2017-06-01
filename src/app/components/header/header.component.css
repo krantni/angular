@@ -42,7 +42,7 @@ h4{
 }
 
 .header{
-  background-color: #549de5;
+  background-color: #FF9321;
   padding: 5px;
   margin-bottom: 10px;
   font-family: sans-serif bold;
@@ -58,7 +58,7 @@ li:hover a{
 }
 
 nav {
-  background-color: #549de5;
+  background-color: #FF9321;
   border: none;
   font-family: 'Open Sans', 'Lato',sans-serif;
 
@@ -77,5 +77,5 @@ nav {
 .navbar .navbar-collapse {
     text-align: center;
     border-top: 0px;
-    background-color: #549de5;
+    background-color: #FF9321;
 }

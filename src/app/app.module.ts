@@ -7,7 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { EducationComponent } from './components/education/education.component';
 import { SocialmediaComponent } from './components/socialmedia/socialmedia.component';
@@ -15,7 +15,7 @@ import { FooterComponent } from './components/footer/footer.component';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/about', pathMatch: 'full' },
-  {path: 'about', component: HomeComponent},
+  {path: 'about', component: AboutComponent},
   {path: 'education', component: EducationComponent},
   {path: 'experience', component: ExperienceComponent}
 ]
@@ -24,7 +24,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent,
+    AboutComponent,
     ExperienceComponent,
     EducationComponent,
     SocialmediaComponent,
