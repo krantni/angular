@@ -22,7 +22,7 @@ h3, h4, h5{
 }
 
 hr{
-    border: 1px solid #FF9321;
+    border: 1px solid #214f78;
 }
 
 @media only screen and (max-width: 720px) {
@@ -42,7 +42,6 @@ hr{
         font-size: .8em;
     }
     .jobImage{
-        display: none;
         float:right;
         max-height: 50px;
     }
