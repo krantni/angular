@@ -17,17 +17,21 @@ export class HeaderComponent implements OnInit {
 
   isExpanded:boolean = true;
   iconState:string = 'burger';
+  developer:string[] = ['D','e','v','e','l','o','p','e','r'];
+  developerHeading:string = '';
 
   ngOnInit() {
+    let timeout:number = 300;
+    this.developer.forEach(letter => {
+      setTimeout(() => {
+        this.developerHeading = this.developerHeading + letter;
+      }, timeout);
+      timeout += 250;
+    });
   }
 
   public toggleMenu(){
     this.iconState = this.iconState === 'burger'? 'x': 'burger';
     return this.isExpanded = this.isExpanded === true? false : true;
   }
-
-  public get menuIcon(): string {
-    return this.isExpanded ? '☰' : '✖';
-  }
-  
 }
