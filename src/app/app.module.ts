@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
+import { GoogleAnalyticsEventsService } from './services/google-analytics.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -37,7 +38,7 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes,{useHash:true})
   ],
-  providers: [],
+  providers: [GoogleAnalyticsEventsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
