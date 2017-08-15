@@ -19,7 +19,7 @@ export const SITES: SocialMedia[] = [
     /* {
         name:"Gmail",
         imagePath:"/assets/images/sites/gmail.png",
-        link:"https://mailto:krantni@gmail.com"
+        link:"https://mailto:krantznicholas@gmail.com"
     }, */
     {
         name:"Instagram",

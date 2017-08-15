@@ -2,6 +2,15 @@ import { Job } from './experience.metadata';
 
 export const JOBS: Job[] = [
     {
+        name: "Ameriprise Financial",
+        startDate: "July 2017", 
+        endDate: "Present",
+        imagePath: "/assets/images/jobs/ampf.jpg",
+        jobTitle: "Technology Leadership Development Program",
+        intro: "",
+        descriptions: []
+    },
+    {
         name: "University of Minnesota",
         startDate: "January 2016", 
         endDate: "May 2017",
