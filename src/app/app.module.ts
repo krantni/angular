@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 import { GoogleAnalyticsEventsService } from './services/google-analytics.service';
+import { GetEducationService } from './services/get-education/get-education.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';

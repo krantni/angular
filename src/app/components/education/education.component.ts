@@ -1,22 +1,22 @@
 import { Component, OnInit} from '@angular/core';
-import { School } from './education.metadata';
-import { SCHOOLS } from './education.config';
-import {animateSchool } from './education.animations';
+import { animateSchool } from './education.animations';
+import { GetEducationService } from '../../services/get-education/get-education.service';
 
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
   styleUrls: ['./education.component.css'],
+  providers:[ GetEducationService ],
   animations:[ animateSchool ]
 })
 export class EducationComponent implements OnInit {
-  public schools: School[];
+  public schools: JSON[];
   schoolState:string = 'inactive';
 
-  constructor() { }
+  constructor(private getSchools: GetEducationService) { }
 
   ngOnInit() {
-    this.schools = SCHOOLS;
+    this.getSchools.getEducation().subscribe(data => this.schools = data);
     this.schoolState = 'active';
   }
 

@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { SocialMedia } from './socialMedia.metadata';
-import { SITES } from './socialMedia.config';
+import { GetSocialMediaService } from '../../services/get-socialmedia/get-social-media.service'
 
 @Component({
   selector: 'app-socialmedia',
   templateUrl: './socialmedia.component.html',
+  providers: [GetSocialMediaService],
   styleUrls: ['./socialmedia.component.css']
 })
 export class SocialmediaComponent implements OnInit {
-  public sites: SocialMedia[];
-  constructor() { }
+  public sites: JSON[];
+  constructor(private getSocialMedia: GetSocialMediaService) { }
   
 
   ngOnInit() {
-    this.sites = SITES;
+    this.getSocialMedia.getSocialMedia().subscribe(data => this.sites = data);;
   }
 
 }
