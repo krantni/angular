@@ -37,7 +37,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes,{useHash:true})
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [GoogleAnalyticsEventsService],
   bootstrap: [AppComponent]
