@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {Router, NavigationEnd} from "@angular/router";
+import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd} from "@angular/router";
 import { GoogleAnalyticsEventsService } from './services/google-analytics.service';
 declare let ga: Function;
 
@@ -9,8 +9,7 @@ declare let ga: Function;
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
-  title = 'app works!';
+export class AppComponent  implements OnInit {
   
   constructor(public router: Router, public googleAnalyticsEventsService: GoogleAnalyticsEventsService) {
     this.router.events.subscribe(event => {
@@ -19,6 +18,11 @@ export class AppComponent {
         ga('send', 'pageview');
       }
     });
+  }
+
+  /* workaround to have About be active link on start of page */
+  ngOnInit() { 
+    this.router.navigateByUrl('\about', { skipLocationChange: true });
   }
   
 

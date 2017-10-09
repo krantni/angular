@@ -15,11 +15,11 @@ import { EducationComponent } from './components/education/education.component';
 import { SocialmediaComponent } from './components/socialmedia/socialmedia.component';
 import { FooterComponent } from './components/footer/footer.component';
 
-const appRoutes: Routes = [
-  {path: '', redirectTo: '/about', pathMatch: 'full' },
+const appRoutes: Routes = [  
   {path: 'about', component: AboutComponent},
   {path: 'education', component: EducationComponent},
-  {path: 'experience', component: ExperienceComponent}
+  {path: 'experience', component: ExperienceComponent},
+  {path: '**', component: AboutComponent}
 ]
 
 @NgModule({
