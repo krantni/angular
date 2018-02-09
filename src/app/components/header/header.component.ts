@@ -17,14 +17,24 @@ export class HeaderComponent implements OnInit {
 
   isExpanded:boolean = true;
   iconState:string = 'burger';
-  developer:string[] = ['D','e','v','e','l','o','p','e','r'];
-  developerHeading:string = '';
+  headers:string[][] = [['D','e','v','e','l','o','p','e','r'],
+                          ['A','m','a','t','e','u','r',' ','C','h','e','f'], 
+                          ['S','n','o','w','b','o','a','r','d','e','r'],
+                          ['C','o','d','e','r'], 
+                          ['J','u','s','t',' ','a',' ','G','u','y']];
+  heading:string = ' ';
 
   ngOnInit() {
+    this.RandomHeader();
+  }
+
+  public RandomHeader(){
+    this.heading = ' ';
     let timeout:number = 300;
-    this.developer.forEach(letter => {
+    let randomNumber = Math.floor(Math.random() * (6-0) + 0);
+    this.headers[randomNumber].forEach(letter => {
       setTimeout(() => {
-        this.developerHeading = this.developerHeading + letter;
+        this.heading = this.heading + letter;
       }, timeout);
       timeout += 250;
     });

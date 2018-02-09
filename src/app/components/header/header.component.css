@@ -37,12 +37,17 @@ button.navbar-toggle.collapsed:enabled{
   background-color: transparent;
 }
 
-h3{
+h3, h3>a{
   color: #000000;
   text-align: center;
   font-family: 'Courier', 'Lato',sans-serif;
   margin: 0;
   font-weight: bold;
+}
+
+h3>a:hover{
+  text-decoration: none;
+  cursor: pointer;
 }
 
 h4{  
