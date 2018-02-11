@@ -4,8 +4,9 @@
       <img src={{school.imagePath}} class="img-responsive schoolImage">
       <h3>{{school.name}}</h3>
       <h5>{{school.startYear}} - {{school.endYear}}</h5>
-      <h5 *ngIf="!hasMajor(school.major)">{{school.major}}</h5>
-      <h5 *ngIf="!hasMajor(school.intro)">{{school.intro}}</h5>
+      <h5 *ngIf="!has(school.major)">{{school.major}}</h5>
+      <h5 *ngIf="!has(school.intro)">{{school.intro}}</h5>
+      <br>
       <ul>
         <li *ngFor="let course of school.courses">{{course}}</li>
       </ul>

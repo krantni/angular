@@ -20,7 +20,7 @@ export class EducationComponent implements OnInit {
     this.schoolState = 'active';
   }
 
-  hasMajor(major){
+  has(major){
     return major === "";
   }
 

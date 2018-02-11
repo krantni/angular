@@ -21,7 +21,7 @@ export class ExperienceComponent implements OnInit {
     this.jobState = 'active';
   }
 
-  public hasDetail(detail){
+  public has(detail){
     return detail === "";
   }
 
