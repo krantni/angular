@@ -15,6 +15,9 @@
           <li *ngFor="let step of recipe.steps">{{step}}</li>
         </ol>
       </div>
+      <h4>Source:</h4>
+      <a *ngIf="recipe.isClickable" href={{recipe.source}} target="_blank">{{recipe.source}}</a>
+      <p *ngIf="!recipe.isClickable">{{recipe.source}}</p>
     </div>
   </div>
 </div>
