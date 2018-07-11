@@ -8,7 +8,9 @@
       <hr>
       <p *ngIf="!has(job.intro)">{{job.intro}}</p>
       <div>
-        <li *ngFor="let desc of job.descriptions">{{desc}}</li>
+        <ul>
+          <li *ngFor="let desc of job.descriptions">{{desc}}</li>
+        </ul>
       </div>
     </div>
   </div>

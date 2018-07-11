@@ -14,11 +14,13 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { EducationComponent } from './components/education/education.component';
 import { SocialmediaComponent } from './components/socialmedia/socialmedia.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RecipesComponent } from './components/recipes/recipes.component';
 
 const appRoutes: Routes = [  
   {path: 'about', component: AboutComponent},
   {path: 'education', component: EducationComponent},
   {path: 'experience', component: ExperienceComponent},
+  {path: 'recipes', component: RecipesComponent},
   {path: '**', component: AboutComponent}
 ]
 
@@ -30,7 +32,8 @@ const appRoutes: Routes = [
     ExperienceComponent,
     EducationComponent,
     SocialmediaComponent,
-    FooterComponent
+    FooterComponent,
+    RecipesComponent
   ],
   imports: [
     BrowserModule,

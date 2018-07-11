@@ -1,0 +1,20 @@
+<div class="containter-fluid" >
+  <div *ngFor="let recipe of recipes" class="recipeCard" [@initState]="recipeState">
+    <div class="recipeInfo" > 
+      <h3>{{recipe.title}}</h3>
+      <hr>
+      <h4>Ingredients:</h4>
+      <div>
+        <ul>
+          <li *ngFor="let ingred of recipe.ingredients">{{ingred}}</li>
+        </ul>
+      </div>
+      <h4>Steps:</h4>
+      <div>
+        <ol>
+          <li *ngFor="let step of recipe.steps">{{step}}</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
