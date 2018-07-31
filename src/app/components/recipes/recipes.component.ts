@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { animateJob } from './recipes.animations';
+import { animateRecipeOpenClose } from './recipes.animations';
 import { GetRecipesService } from '../../services/get-recipes/get-recipes.service'
 
 @Component({
@@ -7,7 +7,7 @@ import { GetRecipesService } from '../../services/get-recipes/get-recipes.servic
   templateUrl: './recipes.component.html',
   styleUrls: ['./recipes.component.css'],
   providers: [GetRecipesService],
-  animations: [ animateJob ]
+  animations: [ animateRecipeOpenClose ]
 })
 export class RecipesComponent implements OnInit {
 
@@ -23,6 +23,26 @@ export class RecipesComponent implements OnInit {
 
   public has(detail){
     return detail === "";
+  }
+
+  public openRecipe(recipeId){
+    let recipeIterator:any;
+    for(recipeIterator in this.recipes){
+      let recipe:any = this.recipes[recipeIterator];
+      if(recipeId != recipe.id){
+        document.getElementById(recipe.id+"Body").classList.remove("open");
+        document.getElementById(recipe.id+"Body").classList.add("closed");
+        document.getElementById(recipe.id+"sign").innerHTML = "+"
+      } else if(document.getElementById(recipe.id+"Body").classList.contains("open")){
+          document.getElementById(recipe.id+"Body").classList.remove("open");
+          document.getElementById(recipe.id+"Body").classList.add("closed");
+          document.getElementById(recipe.id+"sign").innerHTML = "+"
+        } else {
+          document.getElementById(recipe.id+"Body").classList.remove("closed");
+          document.getElementById(recipe.id+"Body").classList.add("open");
+          document.getElementById(recipe.id+"sign").innerHTML = "-"
+      }
+    }
   }
 
 }
