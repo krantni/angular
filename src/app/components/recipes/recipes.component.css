@@ -1,3 +1,25 @@
+.plusMinus {
+    float:right;
+    padding-right:4px;
+    font-size:26px;
+    font-weight: bold;
+    color: #214f78;
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+}
+
+.recipeTitle{
+    font-size: 26px;
+    font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+}
+
+div.recipeBody.closed{
+    display: none;
+}
+
+div.recipeBody.open{
+    display: block;
+}
+
 a, p{
     padding: 5px;
 }

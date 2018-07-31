@@ -1,23 +1,28 @@
 <div class="containter-fluid" >
-  <div *ngFor="let recipe of recipes" class="recipeCard" [@initState]="recipeState">
+  <div *ngFor="let recipe of recipes" class="recipeCard">
     <div class="recipeInfo" > 
-      <h3>{{recipe.title}}</h3>
-      <hr>
-      <h4>Ingredients:</h4>
-      <div>
-        <ul>
-          <li *ngFor="let ingred of recipe.ingredients">{{ingred}}</li>
-        </ul>
+      <div class="header" (click)="openRecipe(recipe.id)">
+        <span class="recipeTitle">{{recipe.title}}</span>
+        <span id="{{recipe.id}}sign" class="plusMinus">+</span>
       </div>
-      <h4>Steps:</h4>
-      <div>
-        <ol>
-          <li *ngFor="let step of recipe.steps">{{step}}</li>
-        </ol>
+      <div id="{{recipe.id}}Body" class="recipeBody closed">
+        <hr>
+        <h4>Ingredients:</h4>
+        <div>
+          <ul>
+            <li *ngFor="let ingred of recipe.ingredients">{{ingred}}</li>
+          </ul>
+        </div>
+        <h4>Steps:</h4>
+        <div>
+          <ol>
+            <li *ngFor="let step of recipe.steps">{{step}}</li>
+          </ol>
+        </div>
+        <h4>Source:</h4>
+        <a *ngIf="recipe.isClickable" href={{recipe.source}} target="_blank">{{recipe.source}}</a>
+        <p *ngIf="!recipe.isClickable">{{recipe.source}}</p>
       </div>
-      <h4>Source:</h4>
-      <a *ngIf="recipe.isClickable" href={{recipe.source}} target="_blank">{{recipe.source}}</a>
-      <p *ngIf="!recipe.isClickable">{{recipe.source}}</p>
     </div>
   </div>
 </div>

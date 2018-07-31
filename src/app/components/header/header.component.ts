@@ -31,7 +31,7 @@ export class HeaderComponent implements OnInit {
   public RandomHeader(){
     this.heading = ' ';
     let timeout:number = 300;
-    let randomNumber = Math.floor(Math.random() * (6-0) + 0);
+    let randomNumber = Math.floor(Math.random() * (6-1) + 0);
     this.headers[randomNumber].forEach(letter => {
       setTimeout(() => {
         this.heading = this.heading + letter;
