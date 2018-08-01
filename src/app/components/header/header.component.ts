@@ -22,16 +22,20 @@ export class HeaderComponent implements OnInit {
                           ['S','n','o','w','b','o','a','r','d','e','r'],
                           ['C','o','d','e','r'], 
                           ['J','u','s','t',' ','a',' ','G','u','y']];
-  heading:string = ' ';
-
+  heading:string = '';
+  
   ngOnInit() {
     this.RandomHeader();
   }
 
   public RandomHeader(){
-    this.heading = ' ';
+    this.heading = '';
     let timeout:number = 300;
     let randomNumber = Math.floor(Math.random() * (6-1) + 0);
+    let highestTimeoutId = setTimeout(";");
+    for (var i = 0 ; i < highestTimeoutId ; i++) {
+      clearTimeout(i); 
+    }
     this.headers[randomNumber].forEach(letter => {
       setTimeout(() => {
         this.heading = this.heading + letter;
