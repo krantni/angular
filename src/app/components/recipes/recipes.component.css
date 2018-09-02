@@ -28,6 +28,15 @@ h3, h4, h5{
     margin: 2px;
 }
 
+div.intro {
+    width: 60%;
+    overflow: hidden;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    padding: 5px;
+    margin: 15px auto;
+}
+
 .recipeCard {
     width: 60%;
     overflow: hidden;

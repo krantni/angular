@@ -1,4 +1,9 @@
 <div class="containter-fluid" >
+  <div class="intro">
+    <p>
+      Rather than reling on other websites to stay afloat, I decided to create my own place to store recipes that I have found. Feel free to try any that you like, you will be able to find the orginal source upon expanding the card.
+    </p>
+  </div>
   <div *ngFor="let recipe of recipes" class="recipeCard">
     <div class="recipeInfo" > 
       <div class="header" (click)="openRecipe(recipe.id)">
